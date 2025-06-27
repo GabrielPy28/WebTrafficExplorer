@@ -4,8 +4,6 @@ import pandas as pd
 from typing import Callable
 from babel.dates import format_date
 
-bg = 'background.jpg'
-
 def generate_layout(
     data: pd.DataFrame,
     plot_heatmap: Callable,

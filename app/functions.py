@@ -6,7 +6,6 @@ import plotly.express as px
 import streamlit as st
 from statsmodels.tsa.arima.model import ARIMA
 
-@st.cache_data
 def load_data():
     try:
         dtype_dict = {
