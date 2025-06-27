@@ -19,7 +19,8 @@ def load_data():
             'First_Time_Visits': str,
             'Returning_Visits': str
         }
-        df = pd.read_csv("./daily-website-visitors.csv", dtype=dtype_dict)
+        file_url = "https://raw.githubusercontent.com/GabrielPy28/WebTrafficExplorer/refs/heads/main/dataset/daily-website-visitors.csv"
+        df = pd.read_csv(file_url, dtype=dtype_dict)
         df.columns = [col.replace('.', '_') for col in df.columns]
         for col in ['Page_Loads', 'Unique_Visits', 'First_Time_Visits', 'Returning_Visits']:
             df[col] = df[col].str.replace(',', '', regex=False).astype(int)
