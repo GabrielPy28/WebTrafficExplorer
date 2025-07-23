@@ -2,6 +2,10 @@
 
 The purpose of the Web Traffic Analysis project is to provide a comprehensive tool for analyzing and forecasting web traffic data from an educational website. By leveraging exploratory data analysis (EDA) techniques and advanced forecasting models, this project aims to uncover insights into visitor behavior, identify trends over time, and predict future traffic patterns. This information is crucial for webmasters and marketers to optimize their strategies, enhance user engagement, and effectively allocate resources based on anticipated traffic fluctuations.
 
+> [!NOTE]  
+> **Estado del Proyecto:**  
+> El proyecto está publicado y disponible para su visualización en: [Web Traffic Explorer](https://webtrafficexplorer-e8nsb3hvp6kyknspboaxqh.streamlit.app)
+
 ## Technologies Used
 
 - Python

@@ -224,7 +224,7 @@ def plot_forecast(data: pd.DataFrame, days: int):
         # Create DataFrame with dates and forecasted values
         forecast_df = pd.DataFrame({'Date': forecast_dates, 'Forecast': forecast.values})
         # Extract day of the week in text (e.g., Monday, Tuesday)
-        forecast_df['DayOfWeek'] = forecast_df['Date'].dt.day_name(locale='en_US')  # English
+        forecast_df['DayOfWeek'] = forecast_df['Date'].dt.day_name()
 
         # Calculate average by day of the week
         avg_by_day = forecast_df.groupby('DayOfWeek')['Forecast'].mean()
